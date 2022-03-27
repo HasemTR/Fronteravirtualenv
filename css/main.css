@@ -21,7 +21,7 @@ p {
 .box3 {
     width: 100%;
     background-color: #b0c8e2;
-    
+    float: left;
     padding: 20px 0px;
     display: block;
     text-align: center;

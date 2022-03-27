@@ -2,6 +2,10 @@ body {
     background-color: ;
 }
 
+header {
+    background-color: #dce2f2;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,4 +16,27 @@ a {
 
 p {
     font-family: 'Roboto', sans-serif;
+}
+
+.box3 {
+    width: 100%;
+    background-color: #b0c8e2;
+    
+    padding: 20px 0px;
+    display: block;
+    text-align: center;
+}
+
+
+#mision, #vision, #objetivo {
+    float: left;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0%;
+}
+
+footer {
+    background-color: #b0c8e2;
 }

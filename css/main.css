@@ -194,12 +194,27 @@ p {
     background-color: white;
 }
 
-.project-landing .project-landing-text {
+section.project-landing-text h2 {
+    color: #1f63ae;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: left;
+}
+section.project-landing-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+section.project-landing-text img {
+    width: 200px;
+    text-align: left;
     float: left;
 }
 
-.project-landing .project-landing-img {
+section.project-landing-img {
     float: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .box4 {

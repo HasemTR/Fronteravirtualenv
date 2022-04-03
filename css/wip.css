@@ -1,3 +1,5 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 body {
     margin: 0;
     padding: 0;
@@ -46,4 +48,8 @@ body {
     75% {
         background-image: url(../img/wip/01.png);
     }
+}
+
+@media {
+
 }

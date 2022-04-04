@@ -55,8 +55,8 @@ html, body{
 	background-size: cover;
 	background-position: center;
 	transition: all .1s ease-out;
-	background-image: url('../assets/img/01.png');
-	animation: banner 28s infinite linear;
+	background-image: url('../assets/img/03.png');
+	animation: banner 14s infinite linear;
 }
 .banner-content{
 	margin: 0;

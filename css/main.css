@@ -4,6 +4,7 @@ html {
     height: 100%;
     margin: auto;
     width: 960px;
+    text-decoration: none;
 }
 
 body {
@@ -42,7 +43,7 @@ header .temporal-disclaimer i {
 header .sites-links a {
     color: #2667b0;
     font-weight: 700;
-    border-bottom: 1px solid #2667b0;
+    text-decoration: none;
 }
 
 nav {
@@ -58,6 +59,9 @@ nav .nav-logo-container img {
 }
 
 nav .nav-logo-container {
+    display: flex;
+    justify-content: flex-start;
+
     margin-left: 50px;
 }
 
@@ -66,6 +70,7 @@ nav .sites-links {
     align-items: center;
     justify-content: flex-end;
     margin-right: 50px;
+    gap: 1em;
 }
 
 main .front-title {
@@ -155,6 +160,14 @@ p {
     
 }
 
+.objetivo  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    margin: 1px;
+}
+
 .box3 {
     width: ;
     background-color: #b0c8e2;
@@ -176,7 +189,9 @@ p {
 }
 
 .box3 i {
+    display: block;
     font-size: 100px;
+    align-items: center;
 }
 
 .box3 section p {
@@ -217,6 +232,11 @@ section.project-landing-img {
     font-family: 'Montserrat', sans-serif;
 }
 
+section.objetivo {
+    padding: 1px;
+    margin-right: 100px;
+}
+
 .box4 {
     display: flex;
     text-align: center;
@@ -225,7 +245,7 @@ section.project-landing-img {
     justify-content: center;
 }
 
-.box5 {
+/* .box5 {
     background-color: white;
     display: flex;
     text-align: center;
@@ -255,7 +275,7 @@ section.project-landing-img {
     color: white;
     padding: 30px 32px;
     text-align:start;
-    text-decoration: none;
+    text-decoration: ;
     display:inline;
     font-size: 16px;
     margin: 7px 4px;
@@ -264,7 +284,7 @@ section.project-landing-img {
     border-radius: 120px;
     font-weight: bold;
     
-}
+} */
 
 footer {
     background-color: #b0c8e2;
@@ -295,7 +315,7 @@ footer .footer-grid .footer-1 .frontera-logo-vertical {
 }
 
 section.footer-1 {
-    font-size: 20px;
+    font-size: 20px;o
 }
 
 section i{
@@ -305,8 +325,9 @@ section i{
 section hr {
     border-top: 1px solid white;;
 }
-section.footer-2 {
+section.footer-2 a{
     font-size: 20px;
+    color: black;
 }
 section.footer-3 {
     font-size: 20px;
@@ -316,3 +337,4 @@ section {
     color: black;
     padding: 20px;
 }
+

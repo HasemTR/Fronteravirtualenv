@@ -9,55 +9,58 @@
     <title>Frontera Virtualenv</title>
     <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <!--Font awesome icons-->
     <script src="https://kit.fontawesome.com/25247541c0.js" crossorigin="anonymous"></script>
+    <script src="./js.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <header>
-        <section class="temporal-disclaimer">
-            <i class="fa-solid fa-circle-exclamation"></i>
-                Página en construcción
-        </section>
+    <!-- Navigation -->
+    <!-- <section class="temporal-disclaimer">
+        <i class="fa-solid fa-circle-exclamation"></i>
+            Frontera x Ekoh-Tech | Mayo 20
+    </section> -->
 
-            <nav>
-                <section class="nav-logo-container">
-                    <a href="./index.html"><img src="./img/fronteralogo.png" alt="Frontera logo"></a>
-                </section>
-
-                <section class="sites-links">
-                    <a href="./">Inicio</a>
-                    <a href="./news.html">Noticias</a>
-                    <a href="./projects.html">Proyectos</a>
-                    
-                </section>
-            </nav>
-        
+    
+    <header class="container row">
+        <a href="#" class="logo">
+            <img src="./logo.png" alt="logo frontera" height="70px" width="85px"> Frontera
+        </a>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="navigation row">
+            <ul class="primary-list row">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+            <!-- <ul class="secondary-list row">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul> -->
+        </nav>
     </header>
-    <main> 
-    <div class="main-container">
-        <h1 class="front-title">METAVERSO
-        
-        UNA FRONTERA
-    
-        DIGITAL</h1>
-    <p class="upper-paragraph">El metaverso es un mundo virtual, al que nos conectaremos utilizando una serie de dispositivos que nos harán pensar que realmente estamos dentro de él, interactuando con todos sus elementos.</p>
-    <div class="main-container-button">
-        <!--<a href="">Cruzar xd</a>-->>
-    </div>
-
-    <div class="main-container-img">
-        <video width="500" height="500"autoplay muted loop>
-            <source src="./img/vrvideo.mp4" type="video/mp4">
-        </video>
-    </div>
-    
-
-    <div class="main-container-down">
-    <!-- <h1 class="bottom-text">¿Quiénes somos?</h1>
-        <p class="bottom-paragraph">Somos un equipo de entusiastas que provienen de distintas carreras y facultades de la Universidad Nacional Autónoma de México, con un objetivo claro, cruzar la siguiente línea entre nosotros y la tecnología.</p>
-    </div> -->
-    <img src="./img/text.png" alt="">
+    <!-- End Navigation -->
+    <!-- Hero -->
+    <section class="container hero row">
+        <div class="content">
+            <h1>Metaverso
+                <br>
+                Una frontera digital
+            </h1>
+            <p>El metaverso es un mundo virtual, al que nos conectaremos utilizando una serie de dispositivos que nos harán pensar que realmente estamos dentro de él, interactuando con todos sus elementos.</p>
+            
+        </div>
+        <div class="img">
+            <video src="./vrvideo.mp4" autoplay muted loop height="500" ></video>
+        </div>
+    </section>
+    <!-- End Hero -->
+    <div class="box2">
+        <h1>¿Quiénes somos?</h1>
+        <br>
+        <p>Nacimos en 2021 derivado de la pandemia por el COVID-19 y de la búsqueda de nuevas plataformas digitales con las cuales pudiéramos tener mayor interactividad e inmersión en distintos ambientes. Desde entonces, hemos sido partícipes en la carrera mundial por la creación del Metaverso y entornos virtuales, impulsando así, el uso de los mismos como una herramienta para el mundo físico a través de sistemas accesibles </p>
     </div>
 
     <div class="box3">
@@ -65,86 +68,82 @@
             <i class="fa-solid fa-bullseye"></i>
             <h2>MISIÓN</h2>
             <p>Proporcionar elementos virtuales y digitales que sirvan como herramientas auxiliares del mundo físico con las cuales podamos alcanzar nuevos métodos de enseñanza y presentación de productos y servicios.</p>
+            <br>
         </section>
 
         <section class="vision">
             <i class="fa-regular fa-eye"></i>
             <h2>VISIÓN</h2>
             <p>Ser la empresa líder en México y LATAM en la creación de ambientes virtuales y contenido digital interactivo.</p>
+            <br>
         </section>
 
         <section class="objetivo">
             <i class="fa-solid fa-crosshairs"></i>
-            <h2>OBJETIVO</h2>
+            <h2>OBJETIVOS</h2>
             <p>
-                Alcanzar los objetivos de cada proyecto con eficiencia y eficacia.
-                <br>
-                Fomentar la creación de ideas innovadoras en todos nuestros departamentos. <br>
-                Cuidar e incentivar la importancia de la salud física y mental de cada persona.</p>
+               
+                &#x2022; Alcanzar los objetivos de cada proyecto con eficiencia y eficacia.
+                    <br>
+                    &#x2022; Fomentar la creación de ideas innovadoras en todos nuestros departamentos.
+                   <br>
+                   &#x2022; Cuidar e incentivar la importancia de la salud física y mental de cada persona.
         </section>
-
     </div>
 
-    <div class="project-landing">
-        <section class="project-landing-text">
-            <h2>Nuestros proyectos</h2>
+    <div class="projects">
+        <div class="projects-text">
+            <h1>
+                Nuestros Proyectos
+            </h1>
             <p>Como equipo multidisciplinario estamos en desarrollo de distintos proyectos para alcanzar nuestros objetivos.</p>
-            <img src="./img/CTA.png" alt="boton cruzar">
-        </section>
-
-        <section class="project-landing-img">
-            <img src="./img/vrmain.png" alt="">
-        </section>
+        </div>
+        <div class="projects-image">
+            <img src="./vrmain.png" alt="">
+        </div>
     </div>
 
-    <div class="box4">
-        <h1>Noticias</h1>
-        <p>Queremos que la comunidad sea testigo de grandes momentos</p>
-    </div>
-
-    <!-- <div class="box5">
-        <h1 class="email-box">¿Quieres ser parte?
-        <br>
-        <label for="email"></label>
-        <input type="email"  class="email-placeholder" name="email" id="email" placeholder="Compártenos tu correo">
-        <input type="submit" class="email-button" value="Trascender">          
-    </h1>
-    </div> -->
-    </main>
-    <!--El escuadrón EMU-->
-
-    <footer id="footer-main-container">
-    <div class="footer-grid">
-        <section class="footer-1">
-            <img src="./img/fronteralogovertical.png" class="frontera-logo-vertical" alt="">
-            <h4>Síguenos</h4>
-            <a href="https://www.instagram.com/frontera.virtualenv/" _blank><i class="fa-brands fa-instagram"></i></a>
+    <footer id="box4">
+        <div class="footer-grid">
+            <section class="footer-1">
+                <img src="./frontierlogo.png" alt="frontera logo en color blanco" class="logo-img">
+                <h4>Síguenos</h4>
+                <a href="https://www.instagram.com/frontera.virtualenv/" _blank><i class="fa-brands fa-instagram"></i></a>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
             <hr>
-            <P>Nacimos en 2021 derivado de la pandemia por el COVID-19 y de la búsqueda de nuevas plataformas digitales con las cuales pudiéramos tener mayor interactividad e inmersión en distintos ambientes. Desde entonces, hemos sido participantes en la carrera mundial por la creación del Metaverso y entornos virtuales, impulsando así, el uso de los mismos como una herramienta para el mundo físico a través de sistemas accesibles.</P>
-        </section>
+            <p>Frontera&copy; es un equipo multidisciplinario que se plantea la investigación y desarrollo de nuevas tecnologías para implementarlas a los métodos académicos actuales, desarrollo de prácticas e interacciones físicas dentro de la facultad.</p>
+            </section>
 
-        <section class="footer-2">
-            <h4>HERRAMIENTAS</h4>
+            <section class="footer-2">
+                <h4>Herramientas</h4>
+                <ul>
+                    <li><a href="#">Aviso de privacidad</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Identidad corporativa</a></li>
+                </ul>
+            </section>
 
-            <p><a href="#">Aviso de privacidad</a></p>
-
-            <p><a href="#">Servicios</a></p>
-            <p><a href="https://www.beautiful.ai/player/-N0mhqp6WGXBTzW74Inx/Frontera " target="_blank">Identidad corporativa</a></p>
-        </section>
-
-        <section class="footer-3">
-            <h4>CONTACTO</h4>
-            <p>Teléfonos</p>
-            <p>- 55 5487 9634</p>
-            <p>- 55 4218 6736</p>
-            <br>
-            <p>Correo electrónico</p>
-            <p>- contacto@fronteravirtualenv.com</p>
-        </section>
-
-    </div>
+            <section class="footer-3">
+                <h4>Contacto</h4>
+                <h5>Teléfonos</h5>
+                <ul>
+                    <li>55 5487 9634</li>
+                    <li>55 4218 6736</li>
+                </ul
+                <br>
+                <h5>Email</h5>
+                <ul>
+                    <li><a href="mailto:contacto@fronteravirtualenv.com">contacto@fronteravirtualenv.com</a></li>
+                </ul>
+            </section>
+        </div>
     </footer>
+<div class="sub-footer">
+    <div class="sub-footer left">
+        &copy; Copyright 2022 Frontera Virtualenv. All Rights Reserved
+    </div>
+</div>
 </body>
+
 </html>

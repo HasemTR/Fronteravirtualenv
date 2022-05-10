@@ -351,7 +351,7 @@ nav a:hover::before {
 .projects {
     background-color: #f2f2f2;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     padding-top: 90px;
     padding-left: 70px;
     padding-right: 70px;
@@ -360,6 +360,11 @@ nav a:hover::before {
 
 .projects h1 {
     color: #1e63ad;
+    font-weight: 600;
+}
+
+.projects p {
+    font-size: larger;
 }
 
 .projects-text {
@@ -371,8 +376,8 @@ nav a:hover::before {
 }
 
 .projects-image img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 
 footer {
@@ -388,6 +393,11 @@ footer h4, h5 {
 footer #box4 {
     border: solid 1px #333;
     padding: 60px;
+}
+
+footer i {
+    text-decoration: none;
+    color: #2f356f;
 }
 
 .footer-grid {

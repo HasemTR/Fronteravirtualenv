@@ -480,6 +480,14 @@ footer i {
 
 /* Media */
 @media screen and (max-width:1000px) {
+    body {
+        background-image: url(../assets/img/backgroundweb-1920x2160.png);
+        -webkit-background-size: auto 200%;
+        background-attachment: scroll;
+        background-position: center;
+    }
+    
+    
     .toggleMenu {
         position: relative;
         right: 50px;
@@ -521,6 +529,11 @@ footer i {
         padding: 100px 100px 0px 30px;
         font-size: 50px;
     }
+
+    .content p {
+        padding-left: 30px;
+    }
+
     .navigation {
         justify-content: center;
         flex-direction: column;

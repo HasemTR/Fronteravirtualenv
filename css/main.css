@@ -628,7 +628,7 @@ footer i {
         flex-direction: column;
         justify-content: center;
         align-items: center ;
-        height: 65vh;
+        height: 70vh;
         text-align: center;
         background-color: #f2f2f2;
     }
@@ -667,7 +667,7 @@ footer i {
         display: flex;
         flex-direction: column;
         font-size: small;
-        ,margin-top: 100px;
+        margin-top: 50px;
         text-align: center;
     }
 

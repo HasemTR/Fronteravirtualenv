@@ -55,7 +55,7 @@ html, body{
 	background-size: cover;
 	background-position: center;
 	transition: all .1s ease-out;
-	background-image: url('../assets/img/03.png');
+	background-image: url('../../assets/img/wip/03.png');
 	animation: banner 14s infinite linear;
 }
 .banner-content{
@@ -93,33 +93,33 @@ html, body{
 }
 @keyframes banner{
 	0%{
-		background-image: url('../assets/img/01.png');
+		background-image: url('../../assets/img/wip/01.png');
 	}
 	25%{
-		background-image: url('../assets/img/01.png');
+		background-image: url('../../assets/img/wip/01.png');
 	}
 
 
 	26%{
-		background-image: url('../assets/img/02.png');
+		background-image: url('../../assets/img/wip/02.png');
 	50%{
-		background-image: url('../assets/img/02.png');
+		background-image: url('../../assets/img/wip/02.png');
 	}
 
 
 	51%{
-		background-image: url('../assets/img/03.png');
+		background-image: url('../../assets/img/wip/03.png');
 	}
 	75%{
-		background-image: url('../assets/img/03.png');
+		background-image: url('../../assets/img/wip/03.png');
 	}
 	
 
 	76%{
-		background-image: url('../assets/img/02.png');
+		background-image: url('../../assets/img/wip/02.png');
 	}
 	100%{
-		background-image: url('../assets/img/02.png');
+		background-image: url('../../assets/img/wip/02.png');
 	}
 
 }

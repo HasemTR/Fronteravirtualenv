@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: center;
     transition: all .1s ease-in-out;
-    background-image: url('../img/wip/01.png');
+    background-image: url('../../assets/img/wip/01.png');
     animation: banner 28s infinite linear;
 }
 
@@ -27,10 +27,10 @@
 
 @keyframes banner {
     0% {
-        background-image: url('../img/wip/01.png');
+        background-image: url('../../assets/img/wip/02.png');
     }
     25% {
-        background-image: url('../img/wip/01.png');
+        background-image: url('../../assets/img/wip/01.png');
     }
     26% {
         background-image: url('../img/wip/02.png');

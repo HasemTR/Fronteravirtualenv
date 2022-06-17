@@ -18,8 +18,6 @@ body {
     overflow: overlay;
 }
 
-
-
 a {
     text-decoration: none;
 
@@ -104,11 +102,6 @@ header.container.row {
 
 header.container.row::after {
     background-color: red;
-}
-
-
-.navigation {
-    align-items: flex-end;
 }
 
 .primary-list {
@@ -265,7 +258,6 @@ nav a:hover::before {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 50vh;
 }
 
 .box2 h1 {
@@ -302,7 +294,7 @@ nav a:hover::before {
 }
 
 .objetivo p {
-    text-align: justify ;
+    text-align: justify;
 }
 
 .mision {
@@ -330,8 +322,8 @@ nav a:hover::before {
 .vision h2{
     text-align: center;
 }
+
 .box3 {
-    width: ;
     display: flex;
     background-color: #2c2c67;
     text-align: center;
@@ -362,7 +354,6 @@ nav a:hover::before {
 
 .box3 section p {
     font-size: 20px;
-
     width: 300px;
 }
 
@@ -401,7 +392,6 @@ nav a:hover::before {
 footer {
     background-color: #f2f2f2;
     color: #2f356f;
-    height: 40vh;
 }
 
 footer h4, h5 {
@@ -466,10 +456,8 @@ footer i {
     background-color: #f2f2f2;
     /* border-top: 1px solid white; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-grow: 2;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     /* margin-bottom: 20px; */
 }
 
@@ -477,27 +465,25 @@ footer i {
     flex: 50%;
 }
 
-
 /* Media */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1080px) {
     body {
         background-image: url(../assets/img/backgroundweb-1920x2160.png);
         -webkit-background-size: auto 200%;
         background-attachment: scroll;
         background-position: center;
     }
-    
-    
+        
     .toggleMenu {
-        position: relative;
-        right: 50px;
+        position: inherit;
+        right: 5%;
         background-image: url(../assets/img/open.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 30px;
         width: 30px;
         height: 30px;
-        padding: 100px 350px 100px 100px;
+        padding: auto 300px 100px 100px;
         z-index: 1000;
         filter: invert(10%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     }
@@ -514,24 +500,20 @@ footer i {
 
     .content {
         max-width: 600px;
-        margin-bottom:10px;
-        padding-top: 0;
-        height: 59vh;
+        max-height: 550px;
+        padding-top: 0px;
         background: none;
     }
 
-
-    .content {
-        display: ;
-    }
-
     .content h1 {
-        padding: 100px 100px 0px 30px;
-        font-size: 50px;
+        padding: 60px 200px 0px 30px;
+        font-size: 280%;
     }
 
     .content p {
         padding-left: 30px;
+        font-size: 135%;
+        text-align: left;
     }
 
     .navigation {
@@ -547,8 +529,11 @@ footer i {
         opacity: 0;
     }
 
-    .img video {
-        display: none;
+    .img {
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
     }
 
     .navigation.active {
@@ -581,16 +566,17 @@ footer i {
 
     .hero {
         flex-wrap: wrap;
-        padding-top: 1em;
+        padding-top: 1rem;
     }
 
     section.container.hero.row {
-        margin: 0;
+        margin: 0px;
+        height: 100%;
     }
 
-
     .box2 {
-        height: 100vh;
+        width: 100%;
+        height: 200%;
         padding: 15px;
     } 
 
@@ -604,7 +590,9 @@ footer i {
         padding: 50px;
     }
 
-    .box3 {
+/* Goals fix below 1,080px */
+
+.box3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -612,15 +600,22 @@ footer i {
     align-items: center;
 }
 
-    .box3 p{
-        padding: 50px;
-        text-align: center;
-    }
+.box3 p{
+    padding: 40px;
+    text-align: center;
+}
+
+.box3 section p {
+    font-size: 1.25rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
 
     section.mision {
-    padding-right: 0;
-    padding-top: 0;
-}
+        padding-right: 0;
+        padding-top: 0;
+    }
 
     section.vision {
         padding-right: 0;
@@ -635,13 +630,13 @@ footer i {
         width: 200px;
         height: 200px;
     }
-
+    
     footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center ;
-        height: 70vh;
+        align-items: center;
+        height: 42.5rem;
         text-align: center;
         background-color: #f2f2f2;
     }
@@ -652,11 +647,10 @@ footer i {
 
     .footer-1 hr {
         display: none;
-
     }
 
     .footer-1 p {
-        padding-right: 0;
+        padding: 1rem;
     }
 
     .footer-2 li a { 
@@ -677,12 +671,92 @@ footer i {
     }
 
     .sub-footer {
-        display: flex;
-        flex-direction: column;
-        font-size: small;
-        margin-top: 50px;
-        text-align: center;
+        color: #2f356f;
+        background-color: #f2f2f2;
+        /* border-top: 1px solid white; */
+        width:100%;
+        /* margin-bottom: 20px; */
     }
 
 }
+
+/* Metaverse text fix at 320px */
+
+@media screen and (max-width:320px) {
+
+    .content h1 {
+        font-weight: 900;
+        font-size: 35px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+/* Projects Fix at 730px and lower */
+
+@media screen and (max-width:730px) {
+    
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 11rem;
+    }
+
+    .projects-image-blue {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 225px;
+        height: 225px;
+    }
+
+}
+
+/* Adjusts goals box between iPad and proper screen resolution */
+
+@media screen and (min-width: 1081px) and (max-width: 1300px) {
+
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 2rem;
+        align-items: normal;
+        padding-bottom: 40px;
+    }
+
+    .mision, .vision{
+        font-size: 1.5rem;
+        padding-right: 40px;
+        text-align: justify;
+    }
+
+    .objetivo {
+        font-size: 1.5rem;
+        padding-right: 0px;
+        text-align: justify;
+    }
+
+    .box3 section p {
+        font-size: 1.25rem;
+        padding: 1rem;
+    }
+
+}
+
 /* End Media */

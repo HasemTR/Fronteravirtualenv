@@ -514,6 +514,7 @@ footer i {
         padding-left: 30px;
         font-size: 135%;
         text-align: left;
+        margin-bottom: 200px;
     }
 
     .navigation {
@@ -682,19 +683,32 @@ footer i {
 
 /* Metaverse text fix at 320px */
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:400px) {
 
     .content h1 {
         font-weight: 900;
         font-size: 35px;
         color: #fff;
         text-transform: uppercase;
-        text-align: center;
+        text-align: left;
         line-height: 1;
         font-family: 'Montserrat', sans-serif;
         padding-top: 50px;
-        padding-left: 50px;
+        padding-left: 2rem;
         padding-right: 50px;
+    }
+
+    .img {
+        display: hidden;
+    }
+
+    .content p {
+        margin-bottom: 20px;
+    }
+
+    section.container.hero.row {
+        margin: 0px 0px 20px 0px;
+        height: 100%;
     }
 
 }
@@ -722,6 +736,10 @@ footer i {
         align-items: center;
         width: 225px;
         height: 225px;
+    }
+
+    .img {
+        display: none;
     }
 
 }

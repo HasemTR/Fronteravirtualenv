@@ -646,7 +646,7 @@ footer i {
     }
 
     .footer-1 hr {
-        display: none;
+        display: absolute;
     }
 
     .footer-1 p {

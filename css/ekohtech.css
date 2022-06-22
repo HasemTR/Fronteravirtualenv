@@ -15,7 +15,13 @@ body {
 
 }
 
+/* Unloads mobile disclaimer */
 
+    section.disclaimer-banner {
+        display: none;
+    }
+
+/* End mobile disclaimer stuff here. appearance and style of it is changed in disclaimer_ekohtech.css */
 
 a {
     text-decoration: none;
@@ -276,10 +282,7 @@ section.container.hero.row {
     margin-bottom: 0px;
 }
 
-
-
 /* End Hero */
-
 
 .footer {
     position: absolute;
@@ -287,211 +290,6 @@ section.container.hero.row {
     margin-left: 50px;
 }
 
-/* Media */
-@media screen and (max-width:1000px) {
-    body {
-        background-image: url(../assets/img/backgroundweb-1920x2160.png);
-        -webkit-background-size: auto 200%;
-        background-attachment: scroll;
-        background-position: center;
-    }
-    
-    
-    .toggleMenu {
-        position: relative;
-        right: 50px;
-        background-image: url(../assets/img/open.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 30px;
-        width: 30px;
-        height: 30px;
-        padding: 100px 350px 100px 100px;
-        z-index: 1000;
-        filter: invert(10%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-    }
-
-    .toggleMenu.active {
-        position: absolute;
-        background-image: url(../assets/img/close.svg);
-        background-size: 25px;
-        fill: white;
-        height: 1000px;
-        width: 30px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    .content {
-        max-width: 600px;
-        margin-bottom:10px;
-        padding-top: 0;
-        height: 59vh;
-        background: none;
-    }
-
-
-    .content {
-        display: ;
-    }
-
-    .content h1 {
-        padding: 100px 100px 0px 30px;
-        font-size: 50px;
-    }
-
-    .content p {
-        padding-left: 30px;
-    }
-
-    .navigation {
-        justify-content: center;
-        flex-direction: column;
-        transform: scale(1, 0);
-        -webkit-transform: scale(1, 0);
-        -moz-transform: scale(1, 0);
-        -ms-transform: scale(1, 0);
-        -o-transform: scale(1, 0);
-        transform-origin: top;
-        max-height: 0;
-        opacity: 0;
-    }
-
-    .img video {
-        display: none;
-    }
-
-    .navigation.active {
-        position: inherit;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: 50px 0px 0px 0px;
-        transform: scale(1, 1);
-        -webkit-transform: scale(1, 1);
-        -moz-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-        -o-transform: scale(1, 1);
-        max-height: 100%;
-        opacity: 1;
-        background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
-    }
-
-    .navigation ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .secondary-list {
-        margin-top: 2em;
-    }
-
-    .hero {
-        flex-wrap: wrap;
-        padding-top: 1em;
-    }
-
-    section.container.hero.row {
-        margin: 0;
-    }
-
-
-    .box2 {
-        height: 100vh;
-        padding: 15px;
-    } 
-
-    .box2 h1 {
-        font-size: 45px;
-    }
-
-    .box2 p {
-        font-size: 19px;
-        text-align: center;
-        padding: 50px;
-    }
-
-    .box3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 24px;
-    align-items: center;
+.sub-footer {
+    padding-left: 2rem;
 }
-
-    .box3 p{
-        padding: 50px;
-        text-align: center;
-    }
-
-    section.mision {
-    padding-right: 0;
-    padding-top: 0;
-}
-
-    section.vision {
-        padding-right: 0;
-        padding-top: 0;
-    }
-
-    section.objetivo p {
-        padding-top: 0;
-    }
-
-    .projects-image img {
-        width: 200px;
-        height: 200px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center ;
-        height: 70vh;
-        text-align: center;
-        background-color: #f2f2f2;
-    }
-
-    .footer-1 > li a { 
-        text-align: center;
-    }
-
-    .footer-1 hr {
-        display: none;
-
-    }
-
-    .footer-1 p {
-        padding-right: 0;
-    }
-
-    .footer-2 li a { 
-        text-align: center;
-    }
-    
-    .footer-3 {
-        background-color: #f2f2f2;
-    }
-
-    .footer-3 li a { 
-        text-align: center;
-        background-color: #f2f2f2;
-    }
-
-    .footer-1, .footer-2, .footer-3 {
-        flex: 100%;
-    }
-
-    .sub-footer {
-        display: flex;
-        flex-direction: column;
-        font-size: small;
-        margin-top: 50px;
-        text-align: center;
-    }
-
-}
-/* End Media */

@@ -180,7 +180,6 @@ nav a:hover::before {
     padding: 0.3em 1em;
 }
 
-
 .secondary-list li:nth-of-type(2) a {
     color: #000;
 }
@@ -196,7 +195,6 @@ nav a:hover::before {
 .hero>* {
     flex-basis: 100%;
 }
-
 
 section.container.hero.row {
     margin-bottom: 0px;
@@ -216,6 +214,7 @@ section.container.hero.row {
 }
 
 .content {
+    min-width: 300px;
     max-width: 600px;
     margin-bottom: 65px;
     height: 650px;
@@ -235,7 +234,7 @@ section.container.hero.row {
     /* background-color: rgb(102, 112, 229, 0.6);
     border-top-left-radius: 20%;
     border-top-right-radius: 20%; */
-    padding-top: 25 px;
+    padding-top: 0px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -291,5 +290,6 @@ section.container.hero.row {
 }
 
 .sub-footer {
+    padding-top: auto;
     padding-left: 2rem;
 }

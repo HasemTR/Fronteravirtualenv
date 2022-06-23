@@ -58,23 +58,6 @@ section.disclaimer-banner {
 
 /* End load / unload stuff here */
 
-/* Button stuff */
-
-.ekohbutton {
-    background-color: #e9b724;
-    border-radius: 15px;
-    color: black;
-    padding: 7px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 40px 40px;
-    cursor: pointer;
-}
-
-/* Button stuff ends here */
-
 /* Header background here */
 
 header.container {
@@ -158,13 +141,13 @@ nav a:hover::before {
 
 .toggleMenu {
     position: inherit;
-    right: 5%;
+    right: 10%;
     background-image: url(../assets/img/open.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40px;
-    width: 40px;
-    height: 40px;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
     padding: auto 300px 100px 100px;
     z-index: 1000;
     filter: invert(10%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
@@ -173,10 +156,10 @@ nav a:hover::before {
 .toggleMenu.active {
     position: absolute;
     background-image: url(../assets/img/close.svg);
-    background-size: 40px;
+    background-size: 35px;
     fill: white;
-    height: 1000px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     padding: 0px 0px 0px 0px;
 }
 
@@ -240,6 +223,8 @@ nav a:hover::before {
     width: 100%;
 }
 
+/* 1.5rem with car */
+
 .banner-content {
 	width: 100%;
 	height: 100%;
@@ -271,11 +256,47 @@ nav a:hover::before {
 	font-family: 'Poppins', monospace;
 }
 
+/* 5rem with car */
+
 .sub-footer {
     padding-top: 10rem;
 }
 
 /* Banner stuff ends */
+
+/* Button stuff */
+
+.ekohbutton {
+    background-color: #e9b724;
+    border-radius: 15px;
+    color: black;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 40px;
+    cursor: pointer;
+}
+
+/* Button stuff ends here */
+
+/* Footer center at resolutions lower than iPad*/
+
+@media screen and (max-width:999px) {
+    
+    .sub-footer{
+        padding-right: 0rem;
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+/* Footer center end*/
 
 @keyframes banner{
 	0%{

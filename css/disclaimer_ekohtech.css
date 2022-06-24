@@ -291,7 +291,7 @@ section.container.hero.row {
 
 /* Button stuff ends here */
 
-/* Footer center at resolutions lower than iPad*/
+/* Footer center at resolutions lower than iPad, also resizes footer */
 
 @media screen and (max-width:999px) {
     
@@ -303,6 +303,16 @@ section.container.hero.row {
         flex-direction: column;
         width: 100%;
     }
+
+    .sub-footer img {
+        padding-right: 0rem;
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 661px;
+}
 
 }
 
@@ -316,6 +326,8 @@ section.container.hero.row {
         width: 200px;
         height: 140px;
     }
+
+
 
 }
 

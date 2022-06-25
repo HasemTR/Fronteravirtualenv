@@ -148,7 +148,7 @@ nav a:hover::before {
 
 .toggleMenu {
     position: inherit;
-    right: 10%;
+    right: 5%;
     background-image: url(../assets/img/open.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -305,6 +305,7 @@ section.container.hero.row {
     }
 
     .sub-footer img {
+        padding-bottom: 1rem;
         padding-right: 0rem;
         padding-left: 0rem;
         display: flex;
@@ -326,8 +327,6 @@ section.container.hero.row {
         width: 200px;
         height: 140px;
     }
-
-
 
 }
 

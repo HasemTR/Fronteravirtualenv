@@ -293,3 +293,113 @@ section.container.hero.row {
     padding-top: auto;
     padding-left: 2rem;
 }
+
+/* Reponsive stuff for resolutions smaller than 1920x1080 here */
+
+/* 1600x900 */
+
+@media screen and (max-width:1601px) {
+    
+    .content {
+        min-width: 500px;
+        max-width: 600px;
+        margin-bottom: 65px;
+        height: 650px;
+        /* background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
+        width: 100px;
+        border-radius: 10%;
+        padding-top: 100px;
+    }
+    
+    .content h1.ekoh {
+        font-weight: 900;
+        font-size: 70px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: 'Montserrat', sans-serif;
+        /* background-color: rgb(102, 112, 229, 0.6);
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%; */
+        padding-top: 3rem;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    /* To hide video and show car, set display in img to contents and display in ekoh-video to none */
+
+    .img {
+        /* display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0px; */
+        display: none;
+    }
+
+    .ekoh-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+
+    .ekoh-video iframe {
+        width: 80%;
+        height: 100%;
+    }
+
+}
+
+/* Average laptop res, 1366x768 */
+
+@media screen and (max-width:1367px) {
+    
+    .content {
+        min-width: 500px;
+        max-width: 600px;
+        margin-bottom: 65px;
+        height: 650px;
+        /* background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
+        width: 100px;
+        border-radius: 10%;
+        padding-top: 100px;
+        margin-right: 1rem;
+    }
+    
+    .content h1.ekoh {
+        font-weight: 900;
+        font-size: 70px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: 'Montserrat', sans-serif;
+        /* background-color: rgb(102, 112, 229, 0.6);
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%; */
+        padding-top: 3rem;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    /* To hide video and show car, set display in img to contents and display in ekoh-video to none */
+
+    .img {
+        /* display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0px; */
+        display: none;
+    }
+
+    .ekoh-video {
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+
+    .ekoh-video iframe {
+        width: 80%;
+        height: 100%;
+    }
+
+}

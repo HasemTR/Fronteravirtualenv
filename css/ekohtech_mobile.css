@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Poppins:wght@200;400;500&family=Roboto:wght@100;400&display=swap');
+
+@import url(normalize.css);
+@import url(bootstrap.css);
+@import url(font-awesome.min.css);
+
+@font-face {
+    font-family: 'OswaldRegular';
+    src: url('../fonts/oswald-regular.eot');
+    src: url('../fonts/oswald-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular.woff2') format('woff2'),
+         url('../fonts/oswald-regular.woff') format('woff'),
+         url('../fonts/oswald-regular.ttf') format('truetype'),
+         url('../fonts/oswald-regular.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoCondensedLight';
+    src: url('../fonts/robotocondensed-light.eot');
+    src: url('../fonts/robotocondensed-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-light.woff2') format('woff2'),
+         url('../fonts/robotocondensed-light.woff') format('woff'),
+         url('../fonts/robotocondensed-light.ttf') format('truetype'),
+         url('../fonts/robotocondensed-light.svg#roboto_condensedlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url('../fonts/robotocondensed-regular.eot');
+    src: url('../fonts/robotocondensed-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-regular.woff2') format('woff2'),
+         url('../fonts/robotocondensed-regular.woff') format('woff'),
+         url('../fonts/robotocondensed-regular.ttf') format('truetype'),
+         url('../fonts/robotocondensed-regular.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../assets/img/ekohtech_background.png);
+    background-size: cover;
+}
+
+/* Unloads car */
+
+.img {
+    display: none;
+}
+
+/* Header background here */
+
+header.container {
+    opacity: 1;
+}
+
+header.container.row {
+    padding: 0%;
+    background-color: #1f472d;
+    width: 100%;
+    position: fixed;
+    height: 75px;
+}
+
+.header-img {
+    width: 100px;
+    height: 60px;
+    margin-left: 100%;
+}
+
+/* Header background end */
+
+/* Navigation menu stuff starts here */
+
+.primary-list {
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+}
+
+.primary-list a::before {
+    position: absolute;
+    top: -30px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transform: scale(1, 0) rotate(360deg);
+    -webkit-transform: scale(1, 0) rotate(360deg);
+    -moz-transform: scale(1, 0) rotate(360deg);
+    -ms-transform: scale(1, 0) rotate(360deg);
+    -o-transform: scale(1, 0) rotate(360deg);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    transform: scale(1, 1) rotate(0);
+    -webkit-transform: scale(1, 1) rotate(0);
+    -moz-transform: scale(1, 1) rotate(0);
+    -ms-transform: scale(1, 1) rotate(0);
+    -o-transform: scale(1, 1) rotate(0);
+}
+
+.secondary-list {
+    margin-left: 0;
+}
+
+.secondary-list a {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.secondary-list li {
+    background-color: #081ea9;
+    padding: 0.3em 2em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.secondary-list li:nth-of-type(2) {
+    background-color: #ffc041;
+    padding: 0.3em 1em;
+}
+
+
+.secondary-list li:nth-of-type(2) a {
+    color: #000;
+}
+
+.toggleMenu {
+    position: inherit;
+    right: 5%;
+    background-image: url(../assets/img/open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    padding: auto 300px 100px 100px;
+    z-index: 1000;
+    filter: invert(10%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.toggleMenu.active {
+    position: absolute;
+    background-image: url(../assets/img/close.svg);
+    background-size: 35px;
+    fill: white;
+    height: 35px;
+    width: 35px;
+    padding: 0px 0px 0px 0px;
+}
+
+.navigation {
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform-origin: top;
+    max-height: 0;
+    opacity: 0;
+}
+
+.navigation.active {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 75px 0px 0px 0px;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    max-height: 100%;
+    opacity: 1;
+/*  background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);*/
+    background-image: url(../assets/img/ekohtech_background.png);
+    background-size: cover;;
+}
+
+.navigation ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+.secondary-list {
+    margin-top: 2em;
+}
+
+section.container.hero.row {
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation menu stuff ends here */
+
+/* Content starts */
+
+span {
+    color: #53c426;
+}
+
+.showroom {
+    font-weight: 500;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.content h1.ekoh {
+    font-weight: 900;
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: rgb(102, 112, 229, 0.6);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%; */
+    padding-top: 5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.ekoh-video {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.ekoh-video iframe {
+    width: 400px;
+    height: 360px;
+}
+
+.content h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.content p, .content a {
+    /* font-weight: 500;
+    font-size: 24px; */
+    color: #fff;
+    padding-top: 2em;
+    /* background-color: rgb(102, 112, 229, 0.6);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%; */
+}
+
+.content a {
+    align-items: center;
+    gap: 1em;
+}
+
+.content i {
+    font-size: 2em;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.content a:hover i {
+    color: #081ea9;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+/* Content end */
+
+.sub-footer {
+    padding-top: 20rem; /* 5rem with car, 16 without */
+}
+
+/* Button stuff */
+
+.ekohbutton {
+    background-color: #e9b724;
+    border-radius: 15px;
+    color: black;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 40px;
+    cursor: pointer;
+}
+
+/* Button stuff ends here */
+
+/* Footer center at resolutions lower than iPad, also resizes footer */
+
+@media screen and (max-width:999px) {
+    
+    .sub-footer {
+        padding-right: 0rem;
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sub-footer img {
+        padding-bottom: 1rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 681px;
+}
+
+}
+
+/* Footer center end*/

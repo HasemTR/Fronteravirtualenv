@@ -222,6 +222,7 @@ section.container.hero.row {
     width: 100px;
     border-radius: 10%;
     padding-top: 100px;
+    margin-right: 10rem;
 }
 
 .content h1 {
@@ -274,12 +275,29 @@ section.container.hero.row {
     -o-transform: rotate(-45deg);
 }
 
+/* Car and video stuff */
+
 .img {
     /* position: relative; */
-    display: flex;
+    display: none;
     justify-content: flex-end;
     margin-bottom: 0px;
 }
+
+.ekoh-video {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+}
+
+.ekoh-video iframe {
+    width: 90%;
+    height: 100%;
+}
+
+/* Car and video stuff end */
 
 /* End Hero */
 

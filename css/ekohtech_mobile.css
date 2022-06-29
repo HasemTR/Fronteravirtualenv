@@ -256,12 +256,11 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    min-width: 100%;
 }
 
 .ekoh-video iframe {
-    width: 400px;
-    height: 360px;
+    min-height: 360px;
 }
 
 .content h1 {
@@ -276,13 +275,8 @@ span {
 }
 
 .content p, .content a {
-    /* font-weight: 500;
-    font-size: 24px; */
     color: #fff;
     padding-top: 2em;
-    /* background-color: rgb(102, 112, 229, 0.6);
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%; */
 }
 
 .content a {
@@ -311,7 +305,7 @@ span {
 /* Content end */
 
 .sub-footer {
-    padding-top: 20rem; /* 5rem with car, 16 without */
+    padding-top: 5rem; /* 5rem with car, 16 without */
 }
 
 /* Button stuff */
@@ -353,8 +347,48 @@ span {
         flex-direction: column;
         width: 90%;
         max-width: 681px;
-}
+    }
 
 }
 
 /* Footer center end*/
+
+/* E-KOH TECH and summary fix at 600px and lower*/
+
+@media screen and (max-width:601px) {
+        
+    .content {
+        min-width: 300px;
+        max-width: 600px;
+        margin-bottom: 65px;
+        height: 650px;
+        width: auto;
+        text-align: justify;
+    }
+
+    .content h1.ekoh, .content h1.ekoh-h2 {
+        font-size: 3rem;
+    }
+
+    .content p, .content a {
+        color: #fff;
+        padding-top: 2em;
+    }
+
+}
+
+@media screen and (max-width:401px) {
+        
+    .content h1.ekoh, .content h1.ekoh-h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width:321px) {
+        
+    .content h1.ekoh, .content h1.ekoh-h2 {
+        font-size: 2.25rem;
+    }
+
+}

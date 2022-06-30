@@ -752,6 +752,14 @@ footer i {
 
 @media screen and (min-width:731px) and (max-width:1080px) {
     
+    .content {
+        max-width: 600px;
+        margin-bottom: 65px;
+        height: 27.5rem;
+        width: 100px;
+        border-radius: 10%;
+    }
+
     .img {
         display: flex;
         flex-direction: row;

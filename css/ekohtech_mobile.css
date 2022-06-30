@@ -195,12 +195,15 @@ nav a:hover::before {
     opacity: 1;
 /*  background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);*/
     background-image: url(../assets/img/ekohtech_background.png);
-    background-size: cover;;
+    background-size: cover;
 }
+
+/* Font size here adjusts padding on Surface Duo screens */
 
 .navigation ul {
     flex-direction: column;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .secondary-list {

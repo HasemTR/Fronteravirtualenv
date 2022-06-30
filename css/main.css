@@ -243,12 +243,16 @@ nav a:hover::before {
 }
 
 .img {
-    /* position: relative; */
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 200px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15%;
 }
 
+.img video {
+    width: 90%;
+    max-height: 400px;
+}
 
 /* End Hero */
 
@@ -699,7 +703,7 @@ footer i {
     }
 
     .img {
-        display: hidden;
+        display: none;
     }
 
     .content p {
@@ -744,6 +748,23 @@ footer i {
 
 }
 
+/* Video adjust fix between 730px and 1080px */
+
+@media screen and (min-width:731px) and (max-width:1080px) {
+    
+    .img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    .img video {
+        width: 90%;
+    }
+
+}
+
 /* Adjusts goals box between iPad and proper screen resolution */
 
 @media screen and (min-width: 1081px) and (max-width: 1300px) {
@@ -773,6 +794,56 @@ footer i {
     .box3 section p {
         font-size: 1.25rem;
         padding: 1rem;
+    }
+
+}
+
+/* Metaverse box fix between 1,081px and 1,366px */
+
+@media screen and (min-width:1081px) and (max-width:1600px) {
+    
+    .content {
+        min-width: 600px;
+        max-width: 600px;
+        margin-bottom: 65px;
+        height: 650px;
+        width: 100px;
+        border-radius: 10%;
+        background-color: rgb(104, 109, 232, 0.7);
+    }
+    
+    .content h1 {
+        font-weight: 900;
+        font-size: 70px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .content p, .content a {
+        font-weight: 500;
+        font-size: 24px;
+        color: #fff;
+        padding-top: 2em;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        min-width: 500px;
+    }
+    
+    .img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    .img video {
+        width: 90%;
     }
 
 }

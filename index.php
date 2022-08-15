@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Somos una organización emergente, apasionados por la innovación en el ámbito de los entornos virtuales.">
     <meta name="robots" content="index, follow">
     <title>Frontera Virtualenv</title>
     <link rel="icon" href="./assets/img/favicon.png">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
         integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <!--Font awesome icons-->
@@ -18,8 +19,10 @@
     <script src="./script/script.js"></script>
 </head>
 <body>
-    <H1>login</H1>
-    <a href="./login.php">login</a>
+    <?php require './partials/header.php'?> 
+
+    <H1>login or signup pls</H1>
+    <a href="./login.php">login</a>  or
     <a href="./register.php">sign up</a>
 </body>
 </html>

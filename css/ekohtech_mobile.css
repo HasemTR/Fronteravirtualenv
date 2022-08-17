@@ -46,7 +46,7 @@ body {
     background-size: cover;
 }
 
-/* Unloads car */
+/* Unloads 3D car, for 2D car CSS code scroll further down */
 
 .img {
     display: none;
@@ -254,9 +254,34 @@ span {
     text-align: center;
 }
 
+/* 2D car and video stuff start here, for 3D car stuff scroll up to near the start of the CSS */ 
+
+.img-mobile-car {
+    display: contents;
+}
+
+/* To resize the car in 2D change max-width, to reposition use the margins already here */
+
+/* Sub-footer padding-top is here to ensure the car image can override the sponsors image, if you want to undo the 2D car set display: contents to none and delete padding:top */
+
+/* Image opacity and blur is done by hand because CSS code doesn't mix very well with the menu for some reason */
+
+.img-mobile-car img {
+    margin-top: -76%;
+    margin-left: -35%;
+    min-width: none;
+    max-width: 135%;
+    position: absolute;
+    z-index: -1;
+}
+
+.sub-footer {
+    padding-top: 55%;
+}
+
 .ekoh-video {
     padding-top: 2rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     min-width: 100%;
@@ -265,6 +290,8 @@ span {
 .ekoh-video iframe {
     min-height: 360px;
 }
+
+/* 2D car and video stuff end here */ 
 
 .content h1 {
     font-weight: 900;
@@ -307,10 +334,6 @@ span {
 
 /* Content end */
 
-.sub-footer {
-    padding-top: 5rem; /* 5rem with car, 16 without */
-}
-
 /* Button stuff */
 
 .ekohbutton {
@@ -342,7 +365,7 @@ span {
     }
 
     .sub-footer img {
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
         padding-right: 0rem;
         padding-left: 0rem;
         display: flex;
@@ -350,6 +373,7 @@ span {
         flex-direction: column;
         width: 90%;
         max-width: 681px;
+        z-index: 2;
     }
 
 }

@@ -320,7 +320,7 @@ section.container.hero.row {
 
 /* 1600x900 */
 
-@media screen and (max-width:1601px) {
+@media screen and (max-width:1801px) {
     
     .content {
         min-width: 500px;

@@ -19,10 +19,12 @@
     <script src="./script/script.js"></script>
 </head>
 <body>
-    <?php require './partials/header.php'?> 
+<?php
+    require './partials/header.php'
+    ?>  
 
     <H1>login or signup pls</H1>
     <a href="./login.php">login</a>  or
-    <a href="./register.php">sign up</a>
+    <a href="./signup.php">sign up</a>
 </body>
 </html>

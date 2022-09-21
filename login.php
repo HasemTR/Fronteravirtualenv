@@ -23,14 +23,15 @@
     require './partials/header.php'
     ?> 
 
-    <H1>Inicio de sesión</H1>
-
+    <H1>Inicia sesión</H1>
+    <span>o <a href="./signup.php">regístrate</a></span>
+    
     <form action="login.php" method="POST">
         <!-- <input name="user_name" type="text" placeholder="nombre">
         <input name="user_name_ap" type="text" placeholder="apellido paterno">
         <input name="user_name_am" type="text" placeholder="apellido materno"> -->
         <input name="user_mail" type="email" placeholder="correo@aragon.unam.mx">
         <input name="user_password" type="password" placeholder="contraseña">
-        <input type="submit" value="submit">
+        <input type="submit" value="enviar">
     </form>
 </html>

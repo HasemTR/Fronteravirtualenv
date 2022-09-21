@@ -21,8 +21,8 @@
 <body>
     <?php require './partials/header.php'?> 
 
-    <h1>Signup</h1>
-    <span>or <a href="./login.php">Login</a></span>
+    <h1>Regístrate</h1>
+    <span>o <a href="./login.php">inicia sesión</a></span>
     <form action="index.html" method="POST"></form>
 </body>
 </html>
